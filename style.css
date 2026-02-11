@@ -199,3 +199,17 @@ footer { padding: 40px 8%; text-align: center; border-top: 1px solid var(--borde
     .skills-visual { border-right: none; border-bottom: 1px solid var(--border); }
     .hex-border { margin: 0 auto; }
 }
+.project-grid {
+    display: grid;
+    /* This ensures cards are at least 320px wide and wrap automatically */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+}
