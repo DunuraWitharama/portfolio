@@ -90,6 +90,57 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 800; line-height: 1.1; 
 }
 /* --- END OF FIX --- */
 
+/* SKILLS HEXAGON & PROGRESS BARS */
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.skills-visual {
+    text-align: center;
+    border-right: 1px solid var(--border);
+    padding: 20px;
+}
+
+.skill-bar-wrapper { margin-bottom: 25px; }
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono';
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+.progress-line {
+    height: 8px;
+    width: 100%;
+    background: var(--secondary);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.progress-line span {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    transition: 1.5s cubic-bezier(1, 0, 0, 1);
+    width: 0; /* Animated by JS */
+}
+
+/* THANK YOU SECTION */
+.thank-you-section { text-align: center; padding: 120px 8%; }
+.thank-you-card {
+    display: inline-block;
+    padding: 60px;
+    background: var(--glass);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
+}
+
 /* BUTTONS */
 .hero-btns { display: flex; gap: 15px; flex-wrap: wrap; }
 .btn-primary { background: var(--primary); color: #000; padding: 14px 30px; border-radius: 4px; font-weight: 800; text-decoration: none; transition: 0.3s; box-shadow: 0 0 15px var(--primary); display: inline-block; cursor: pointer; }
@@ -144,6 +195,7 @@ footer { padding: 40px 8%; text-align: center; border-top: 1px solid var(--borde
 @media (max-width: 992px) {
     .hero { flex-direction: column-reverse; text-align: center; height: auto; padding-bottom: 50px; }
     .hero-btns, .social-sidebar { justify-content: center; }
-    .bio-grid, .edu-grid, .contact-container { grid-template-columns: 1fr; }
+    .bio-grid, .edu-grid, .contact-container, .skills-container { grid-template-columns: 1fr; }
+    .skills-visual { border-right: none; border-bottom: 1px solid var(--border); }
     .hex-border { margin: 0 auto; }
 }
