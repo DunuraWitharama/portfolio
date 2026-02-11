@@ -12,7 +12,6 @@
 
     <div id="loader" class="loader-wrapper">
         <div class="loader-content">
-            <div class="scanner"></div>
             <p id="load-text">INITIALIZING_SYSTEM...</p>
             <div class="progress-bar"><div class="progress-fill"></div></div>
         </div>
@@ -20,7 +19,6 @@
 
     <div class="tech-bg">
         <div class="grid-overlay"></div>
-        <div class="scanline"></div>
     </div>
 
     <nav class="glass-nav">
@@ -32,9 +30,10 @@
             <li><a href="#home" class="active">01_HOME</a></li>
             <li><a href="#about">02_BIO</a></li>
             <li><a href="#projects">03_WORK</a></li>
-            <li><a href="#certs">04_CERTS</a></li>
-            <li><a href="#edu">05_ACADEMIA</a></li>
-            <li><a href="#contact">06_LINK</a></li>
+            <li><a href="#skills">04_SKILLS</a></li>
+            <li><a href="#certs">05_CERTS</a></li>
+            <li><a href="#edu">06_ACADEMIA</a></li>
+            <li><a href="#contact">07_LINK</a></li>
         </ul>
     </nav>
 
@@ -115,8 +114,47 @@
         </div>
     </section>
 
+    <section id="skills" class="section">
+        <h2 class="section-label">03 // TECHNICAL_PROWESS</h2>
+        <div class="skills-container glass-card">
+            <div class="skills-visual">
+                <h3>Capability_Hexagon</h3>
+                <div style="height: 300px; width: 100%; margin-top: 20px;">
+                    <canvas id="skillRadar"></canvas>
+                </div>
+            </div>
+            <div class="skills-bars">
+                <h3>Proficiency_Levels</h3>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info"><span>HTML5 / CSS3</span><span>95%</span></div>
+                    <div class="progress-line"><span data-width="95%"></span></div>
+                </div>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info"><span>JAVASCRIPT</span><span>88%</span></div>
+                    <div class="progress-line"><span data-width="88%"></span></div>
+                </div>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info"><span>PYTHON</span><span>82%</span></div>
+                    <div class="progress-line"><span data-width="82%"></span></div>
+                </div>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info"><span>JAVA</span><span>78%</span></div>
+                    <div class="progress-line"><span data-width="78%"></span></div>
+                </div>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info"><span>UI/UX DESIGN</span><span>90%</span></div>
+                    <div class="progress-line"><span data-width="90%"></span></div>
+                </div>
+                <div class="skill-bar-wrapper">
+                    <div class="skill-info"><span>DATABASE HANDLING</span><span>85%</span></div>
+                    <div class="progress-line"><span data-width="85%"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="certs" class="section">
-        <h2 class="section-label">03 // VALIDATED_CREDENTIALS</h2>
+        <h2 class="section-label">04 // VALIDATED_CREDENTIALS</h2>
         <div class="cert-grid">
             <div class="cert-item glass-card">
                 <i class="fa fa-certificate"></i>
@@ -140,24 +178,17 @@
                 </div>
             </div>
             <div class="cert-item glass-card">
-                <i class="fa fa-brain"></i>
+                <i class="fa fa-code"></i>
                 <div class="cert-info">
                     <h4>Transformer-Based NLP</h4>
                     <p>NVIDIA</p>
-                </div>
-            </div>
-            <div class="cert-item glass-card">
-                <i class="fa fa-terminal"></i>
-                <div class="cert-info">
-                    <h4>Prompt Engineering for Devs</h4>
-                    <p>DeepLearning.AI</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="edu" class="section">
-        <h2 class="section-label">04 // ACADEMIC_LOGS</h2>
+        <h2 class="section-label">05 // ACADEMIC_LOGS</h2>
         <div class="edu-grid">
             <div class="terminal glass-card">
                 <div class="term-header">LEVEL_05_TRANSCRIPT</div>
@@ -178,14 +209,13 @@
     </section>
 
     <section id="contact" class="section">
-        <h2 class="section-label">05 // CONTACT_PROTOCOL</h2>
+        <h2 class="section-label">06 // CONTACT_PROTOCOL</h2>
         <div class="contact-container">
             <div class="glass-card contact-form">
                 <form action="https://formspree.io/f/meelerpw" method="POST">
                     <input type="text" name="name" placeholder="IDENTIFY_NAME" required>
                     <input type="email" name="_replyto" placeholder="EMAIL_ADDRESS" required>
                     <textarea name="message" rows="5" placeholder="MESSAGE_CONTENT" required></textarea>
-                    <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
                     <button type="submit" class="btn-primary">SEND_PACKET</button>
                 </form>
             </div>
@@ -198,10 +228,18 @@
         </div>
     </section>
 
+    <section class="thank-you-section">
+        <div class="thank-you-card">
+            <h2 class="cyan-glow">THANK YOU</h2>
+            <p>System initialized. Connection established.</p>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2026 DUNURA WITHARAMA. ALL_SYSTEMS_OPERATIONAL.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
