@@ -54,44 +54,40 @@ document.addEventListener('DOMContentLoaded', () => {
         type();
     }
 
-    // 3. SKILL RADAR HEXAGON
-    const radarCanvas = document.getElementById('skillRadar');
-    if (radarCanvas) {
-        const ctx = radarCanvas.getContext('2d');
-        new Chart(ctx, {
-            type: 'radar',
-            data: {
-                labels: ['HTML/CSS', 'JS', 'PYTHON', 'JAVA', 'UI/UX', 'DB'],
-                datasets: [{
-                    label: 'Proficiency',
-                    data: [95, 88, 82, 78, 90, 85],
-                    backgroundColor: 'rgba(0, 243, 255, 0.2)',
-                    borderColor: '#00f3ff',
-                    pointBackgroundColor: '#00f3ff',
-                    pointBorderColor: '#fff',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    r: {
-                        angleLines: { color: 'rgba(255,255,255,0.1)' },
-                        grid: { color: 'rgba(255,255,255,0.1)' },
-                        pointLabels: { 
-                            color: '#f8fafc', 
-                            font: { family: 'JetBrains Mono', size: 12 } 
-                        },
-                        ticks: { display: false },
-                        suggestedMin: 0,
-                        suggestedMax: 100
-                    }
+    // 2. SKILL RADAR HEXAGON (Professional Version)
+const radarCtx = document.getElementById('skillRadar').getContext('2d');
+new Chart(radarCtx, {
+    type: 'radar',
+    data: {
+        labels: ['LOGIC', 'LEADERSHIP', 'DESIGN', 'SPEED', 'AGILITY', 'COMMS'],
+        datasets: [{
+            label: 'Attributes',
+            data: [95, 80, 90, 85, 92, 88], // Updated values
+            backgroundColor: 'rgba(0, 243, 255, 0.2)',
+            borderColor: '#00f3ff',
+            pointBackgroundColor: '#00f3ff',
+            pointBorderColor: '#fff',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            r: {
+                angleLines: { color: 'rgba(255,255,255,0.1)' },
+                grid: { color: 'rgba(255,255,255,0.1)' },
+                pointLabels: { 
+                    color: '#f8fafc', 
+                    font: { family: 'JetBrains Mono', size: 11 } 
                 },
-                plugins: { legend: { display: false } }
+                ticks: { display: false },
+                suggestedMin: 0
             }
-        });
+        },
+        plugins: { legend: { display: false } }
     }
+});
 
     // 4. SCROLL-TRIGGERED PROGRESS BARS
     const skillSection = document.getElementById('skills');

@@ -213,3 +213,43 @@ footer { padding: 40px 8%; text-align: center; border-top: 1px solid var(--borde
     justify-content: space-between;
     min-height: 280px;
 }
+/* NEW SKILLS GRID */
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-module {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--primary);
+    padding: 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.skill-module:hover {
+    background: rgba(0, 243, 255, 0.05);
+    transform: translateX(5px);
+}
+
+.module-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.skill-module p {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.status-ok {
+    color: var(--primary);
+    font-weight: bold;
+    text-shadow: 0 0 8px var(--primary);
+}
