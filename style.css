@@ -1,4 +1,4 @@
-/* DUNURA WITHARAMA - CONSOLIDATED TECH-GLOW CSS */
+/* DUNURA WITHARAMA - FINAL TECH-GLOW CSS (FIXED IMAGE ZOOM) */
 
 /* ROOT VARIABLES */
 :root {
@@ -75,15 +75,20 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 800; line-height: 1.1; 
     border-bottom: 4px solid var(--primary); border-right: 4px solid var(--primary); z-index: 2;
 }
 
+/* --- THE FIX IS HERE --- */
 .hex-border img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    object-position: top; /* Ensures head is visible */
-    filter: grayscale(20%) contrast(110%);
+    width: 100%; 
+    height: 100%;
+    object-fit: contain; /* Changed from cover to contain to ensure the WHOLE image fits */
+    background: #111;    /* Background color to fill any gaps if the image is too narrow */
+    filter: contrast(110%);
     transition: 0.5s ease;
 }
 
-.hex-border:hover img { transform: scale(1.05); filter: grayscale(0%); }
+.hex-border:hover img { 
+    transform: scale(1.05); /* Very subtle zoom on hover only */
+}
+/* --- END OF FIX --- */
 
 /* BUTTONS */
 .hero-btns { display: flex; gap: 15px; flex-wrap: wrap; }
