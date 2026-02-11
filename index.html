@@ -3,93 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dunura Witharama | Software Engineer</title>
+    <title>Dunura Witharama | Software Engineer.sys</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">DUNURA<span>.</span></div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="scanner"></div>
+            <p id="load-text">INITIALIZING_SYSTEM...</p>
+            <div class="progress-bar"><div class="progress-fill"></div></div>
         </div>
+    </div>
+
+    <div class="tech-bg">
+        <div class="grid-overlay"></div>
+        <div class="scanline"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo">DUNURA<span>.sys</span></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">01_HOME</a></li>
+            <li><a href="#about">02_BIO</a></li>
+            <li><a href="#projects">03_WORK</a></li>
+            <li><a href="#certs">04_CERTS</a></li>
+            <li><a href="#edu">05_ACADEMIA</a></li>
+            <li><a href="#contact">06_LINK</a></li>
+        </ul>
     </nav>
 
-    <header class="hero">
+    <header id="home" class="hero section">
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Dunura Witharama</span></h1>
-            <p class="tagline">Software Engineer & BSc (Hons) Computer Science Student</p>
+            <p class="code-text">> STATUS: ACTIVE_DEVELOPER</p>
+            <h1>DUNURA <span class="cyan-glow">WITHARAMA</span></h1>
+            <div class="typing-container">
+                <p class="running-text">Computer Science Student @ IIT | Full-Stack Developer | AI Enthusiast</p>
+            </div>
+            <p class="hero-desc">
+                Driven by curiosity and a relentless commitment to innovation. 
+                Specializing in building high-impact, user-centric digital solutions.
+            </p>
             <div class="hero-btns">
-                <a href="#projects" class="btn primary">Explore Projects</a>
-                <a href="#" class="btn secondary">Download CV</a>
+                <a href="#contact" class="btn-primary">GET_IN_TOUCH</a>
+                <a href="Dunura_CV.pdf" download class="btn-secondary"><i class="fa fa-download"></i> DOWNLOAD_CV</a>
+            </div>
+            <div class="social-sidebar">
+                <a href="https://github.com/DunuraWitharama" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/dunura-witharama-7109842b2/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/dunurawitharama/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/dunura.witharama" target="_blank" class="fa fa-facebook"></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hex-border">
+                <img src="profile image.jpg" alt="Dunura Witharama">
             </div>
         </div>
     </header>
 
     <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        [cite_start]<p>I am a dedicated Computer Science student at the Informatics Institute of Technology (IIT)[cite: 6]. [cite_start]I enjoy tackling challenges with a creative mindset and bringing concepts to life through user-focused solutions[cite: 8].</p>
-        
-        <div class="edu-container">
-            <h3>Education Highlights</h3>
-            [cite_start]<p><strong>University of Westminster</strong> (2023-Present) [cite: 11, 12]</p>
-            <ul>
-                [cite_start]<li>Professional Development (Part 1): 100% [cite: 21]</li>
-                [cite_start]<li>Human Computer Interaction and UX: 90% [cite: 19]</li>
-                [cite_start]<li>Computer Systems Fundamentals: 91% [cite: 26]</li>
-                [cite_start]<li>Database Systems: 88% [cite: 16]</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="skills" class="section alt-bg">
-        <h2 class="section-title">Skills & Certifications</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Technical</h3>
-                [cite_start]<p>Python, Java, JavaScript, HTML & CSS [cite: 82, 83, 84]</p>
-                [cite_start]<p>Web Development & UI/UX Design [cite: 85]</p>
+        <h2 class="section-label">01 // PERSONAL_DATABASE</h2>
+        <div class="glass-card bio-grid">
+            <div class="bio-text">
+                <h3>System_Profile</h3>
+                <p>I am a dedicated Computer Science student at IIT. My journey is fueled by a creative mindset and a passion for bringing concepts to life through technical precision.</p>
+                <div class="info-grid">
+                    <div class="info-item"><span>BIRTHDAY:</span> 17 April 2006</div>
+                    <div class="info-item"><span>AGE:</span> 19</div>
+                    <div class="info-item"><span>LOCATION:</span> Colombo, Sri Lanka</div>
+                    <div class="info-item"><span>DEGREE:</span> BSc (Hons) Computer Science</div>
+                </div>
             </div>
-            <div class="skill-card">
-                <h3>Certifications</h3>
-                <ul>
-                    [cite_start]<li>Microsoft Azure: Cloud Concepts [cite: 36]</li>
-                    [cite_start]<li>NVIDIA: Transformer-Based NLP [cite: 39]</li>
-                    [cite_start]<li>Cisco: Cybersecurity [cite: 37]</li>
-                </ul>
+            <div class="bio-skills">
+                <h3>Core_Capabilities</h3>
+                <div class="skill-tags">
+                    <span class="tag">HTML5/CSS3</span><span class="tag">JAVASCRIPT</span>
+                    <span class="tag">PYTHON</span><span class="tag">JAVA</span>
+                    <span class="tag">UI/UX DESIGN</span><span class="tag">DATABASE HANDLING</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
+        <h2 class="section-label">02 // DEPLOYED_WORK</h2>
+        <div class="project-grid">
+            <div class="project-card glass-card">
+                <div class="status-tag">ACTIVE</div>
                 <h3>MUC Digital</h3>
-                [cite_start]<p>Digitalized municipal services with real-time GPS tracking and AI chatbot[cite: 64, 65].</p>
-                <span class="tech">Flutter | Node.js | Firebase</span>
-                <a href="" class="proj-link">GitHub Repo</a>
+                <p>Leading development of a platform to digitalize Maharagama Urban Council services. Featuring real-time GPS tracking and AI chatbots.</p>
+                <div class="tech-stack">Flutter, React, Node.js, Firebase</div>
             </div>
-            <div class="project-card">
-                <h3>BuildMagnet</h3>
-                [cite_start]<p>Full-stack construction marketplace with AI design tools and AR previews[cite: 75, 76].</p>
-                <span class="tech">Full-Stack Web</span>
-                <a href="" class="proj-link">Details</a>
+            <div class="project-card glass-card">
+                <div class="status-tag">DESIGN</div>
+                <h3>WaveLink Mobile App</h3>
+                <p>A gamified ocean conservation platform turning beach cleanups into rewarding daily missions with social impact metrics.</p>
+                <div class="tech-stack">Figma, UI/UX Design</div>
+            </div>
+            <div class="project-card glass-card">
+                <div class="status-tag">WEB</div>
+                <h3>Climate Change App</h3>
+                <p>Built a responsive awareness web app with interactive temperature & CO2 charts. Full ARIA accessibility implemented.</p>
+                <div class="tech-stack">HTML5, CSS, JS, Charts.js</div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <h2>Let's Connect</h2>
-        [cite_start]<p>Colombo, Sri Lanka [cite: 3]</p>
-        <div class="social-links">
-            <a href="mailto:dunura.20231815@iit.ac.lk">Email</a>
-            <a href="">LinkedIn</a>
-            <a href="">GitHub</a>
+    <section id="certs" class="section">
+        <h2 class="section-label">03 // VALIDATED_CREDENTIALS</h2>
+        <div class="cert-grid">
+            <div class="cert-item glass-card">
+                <i class="fa fa-certificate"></i>
+                <div class="cert-info">
+                    <h4>Microsoft Azure: Cloud Concepts</h4>
+                    <p>Microsoft</p>
+                </div>
+            </div>
+            <div class="cert-item glass-card">
+                <i class="fa fa-shield"></i>
+                <div class="cert-info">
+                    <h4>Cybersecurity</h4>
+                    <p>Cisco</p>
+                </div>
+            </div>
+            <div class="cert-item glass-card">
+                <i class="fa fa-eye"></i>
+                <div class="cert-info">
+                    <h4>Computer Vision</h4>
+                    <p>Microsoft Learning</p>
+                </div>
+            </div>
+            <div class="cert-item glass-card">
+                <i class="fa fa-brain"></i>
+                <div class="cert-info">
+                    <h4>Transformer-Based NLP</h4>
+                    <p>NVIDIA</p>
+                </div>
+            </div>
+            <div class="cert-item glass-card">
+                <i class="fa fa-terminal"></i>
+                <div class="cert-info">
+                    <h4>Prompt Engineering for Devs</h4>
+                    <p>DeepLearning.AI</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id="edu" class="section">
+        <h2 class="section-label">04 // ACADEMIC_LOGS</h2>
+        <div class="edu-grid">
+            <div class="terminal glass-card">
+                <div class="term-header">LEVEL_05_TRANSCRIPT</div>
+                <div class="grade-row"><span>HCI & UX</span><b>90%</b></div>
+                <div class="grade-row"><span>Database Systems</span><b>88%</b></div>
+                <div class="grade-row"><span>Professional Dev</span><b>100%</b></div>
+                <div class="grade-row"><span>Advanced Client-Side</span><b>73%</b></div>
+                <div class="grade-row"><span>OOP (Java)</span><b>76%</b></div>
+            </div>
+            <div class="terminal glass-card">
+                <div class="term-header">LEVEL_04_TRANSCRIPT</div>
+                <div class="grade-row"><span>Comp Systems Fund.</span><b>91%</b></div>
+                <div class="grade-row"><span>Maths for Computing</span><b>81%</b></div>
+                <div class="grade-row"><span>Software Development I</span><b>74%</b></div>
+                <div class="grade-row"><span>Web Design & Dev</span><b>59%</b></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-label">05 // CONTACT_PROTOCOL</h2>
+        <div class="contact-container">
+            <div class="glass-card contact-form">
+                <form action="https://formspree.io/f/meelerpw" method="POST">
+                    <input type="text" name="name" placeholder="IDENTIFY_NAME" required>
+                    <input type="email" name="_replyto" placeholder="EMAIL_ADDRESS" required>
+                    <textarea name="message" rows="5" placeholder="MESSAGE_CONTENT" required></textarea>
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
+                    <button type="submit" class="btn-primary">SEND_PACKET</button>
+                </form>
+            </div>
+            <div class="glass-card contact-details">
+                <h3>Physical_Location</h3>
+                <p><i class="fa fa-map-marker"></i> Yanthampalava, Kurunegala, SL</p>
+                <p><i class="fa fa-phone"></i> +94 70 3326 203</p>
+                <p><i class="fa fa-envelope"></i> dunurawitharama@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 DUNURA WITHARAMA. ALL_SYSTEMS_OPERATIONAL.</p>
     </footer>
 
     <script src="script.js"></script>
